@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
       if @current_user == nil
       redirect_to "/login"
   end
+end
 
   def create
     @entry = Entry.new
